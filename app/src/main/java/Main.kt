@@ -11,13 +11,16 @@ fun main(args: Array<String>) {
     println(steveSalary)
     println(monthly)
 
+
+
     // User input through terminal
     println("How old are you?")
     val age = readLine()!!.toInt()
+    println("You entered $age")
 
     // When statement (if/else)
-    val message = when {
-        age < 18 -> "Sorry you cant vote"
+    val message: String = when {
+        age < 18 -> "Cant vote"
         age == 100 -> "Congrats"
         else -> "You can vote!"
     }
